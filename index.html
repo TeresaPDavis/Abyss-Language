@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abyss Language</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000; /* 深色背景 */
+            color: #fff; /* 白色文字 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; /* 防止滚动条 */
+        }
+        .text-container {
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .abyss-text {
+            font-size: 10vw; /* 响应式字体大小 */
+            line-height: 0.9;
+            font-weight: 900;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3); /* 发光效果 */
+            word-break: break-word; /* 确保长单词换行 */
+        }
+
+        /* 针对小屏幕的调整 */
+        @media (max-width: 768px) {
+            .abyss-text {
+                font-size: 15vw; /* 在小屏幕上字体更大 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <h1 class="abyss-text">
+            ABYSS<br>LANGUAGE<br>IN<br>DEVELOPMENT
+        </h1>
+    </div>
+</body>
+</html>
