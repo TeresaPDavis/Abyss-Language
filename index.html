@@ -62,6 +62,12 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
+        
+        .card video {
+            width: 100%;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+        }
 
         h2 {
             color: var(--primary-color);
@@ -125,6 +131,169 @@
 
         <section id="flight-club" class="card">
             <h2>SYB模拟飞行俱乐部</h2>
+            <video controls>
+                <source src="movie.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+            <p><strong>SYB模拟飞行俱乐部</strong>诞生于<span class="highlight">2024年7月12日</span>，虽然年轻，却充满了无限活力与激情。我们始终致力于为广大飞行爱好者打造一个交流与逐梦的理想家园。俱乐部拥有高配置的连飞服务器，这意味着无论你是追求极致真实感的 **X-Plane** 或 **微软模拟飞行** 玩家，还是希望利用碎片时间在手机端开启飞行之旅的爱好者，都能在这里找到志同道合的伙伴。</p>
+            <p>在这里，没有距离的限制，也没有时间的束缚。只要你热爱飞行，打开设备，就能瞬间融入这个充满奇幻色彩的飞行天地。你可以和来自五湖四海的飞友们一起编队飞行，共同探索天空的奥秘，交流飞行技巧，分享飞行途中的奇妙风景，感受团队协作带来的独特乐趣。我们诚挚地邀请每一位怀揣飞行梦想的你，加入SYB模拟飞行俱乐部，开启属于你的云端冒险，让飞行不再只是想象，而是触手可及的美好体验。</p>
+        </section>
+
+        <section id="black-cat-band" class="card">
+            <h2>黑猫乐队：SYB的重型音乐心脏</h2>
+            <p><strong>黑猫乐队</strong>是SYB旗下的一支标志性重型乐队，我们的音乐如同其名，既神秘又充满力量。我们以震耳欲聋的节奏、充满张力的吉他riff和极具感染力的舞台表现著称。乐队的创作灵感来源于现代都市的喧嚣与内心的挣扎，旨在用强劲的音浪冲击听众的感官，释放内心深处最原始的野性。我们不只是演奏音乐，更是在用声音讲述故事。如果你热爱摇滚，渴望在充满能量的现场找到共鸣，黑猫乐队随时欢迎你加入我们的音乐狂潮。</p>
+        </section>
+
+        <section id="esports" class="card">
+            <h2>电子竞技：PUBG赛场上的小战队</h2>
+            <p>SYB的电子竞技部门是一个充满活力的大家庭。我们拥有一支专注于<span class="highlight">PUBG锦标赛</span>的小战队，虽然规模不大，但我们有着大大的梦想和坚韧不拔的毅力。我们每周都会进行高强度的训练，细致分析战术，不断磨练我们的个人技术与团队配合。我们深知，在竞争激烈的电竞世界中，唯有通过持续的努力和紧密的协作，才能在各大锦标赛中挑战强者，实现我们的目标。我们不只是一群玩家，更是一个为了共同胜利而奋斗的集体。如果你有志于在电竞舞台上挥洒汗水，欢迎成为我们的一员。</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>SYB官方QQ群: 935582785</p>
+        <p>SYB创始人邮箱: haoyangwang2010@163.com</p>
+        <p>&copy; 2025 SYB All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYB - 我们的团队与项目</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #333;
+            --secondary-color: #f89406;
+            --bg-light: #f4f4f4;
+            --bg-dark: #222;
+            --text-light: #fff;
+            --text-dark: #333;
+            --card-bg: #fff;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card video {
+            width: 100%;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.75rem;
+            margin-top: 0;
+            font-size: 1.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .highlight {
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+        
+        footer {
+            background: var(--bg-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                width: 95%;
+            }
+            .card {
+                padding: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SYB - 我们的团队与项目</h1>
+    </header>
+
+    <div class="container">
+        <section id="about" class="card">
+            <h2>关于我们：一个充满激情的团队</h2>
+            <p><strong>SYB</strong> 并非一个简单的社团，而是一个由拥有共同愿景和激情的人们组成的紧密团队。我们坚信，通过将来自不同文化和背景的才华汇聚一堂，可以创造出超越想象的火花。我们的创始人，一位充满远见卓识的企业家，目前位于<span class="highlight">香港</span>，在那里他为SYB注入了国际化的视野和创新的思维。从一开始，SYB就致力于成为一个孵化器，一个鼓励成员们在各自热爱的领域中探索、成长和突破自我的平台。</p>
+            <p>我们的使命是打破传统界限，让音乐的震撼、电竞的激情与飞行的梦想完美融合。在这里，每一位成员都被视为团队中不可或缺的一部分，他们的创意和努力共同构筑了SYB的独特文化。我们不仅追求卓越的成果，更珍视团队协作、相互支持和共同进步的过程。</p>
+        </section>
+
+        <section id="flight-club" class="card">
+            <h2>SYB模拟飞行俱乐部</h2>
+            <video controls>
+                <source src="movie.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
             <p><strong>SYB模拟飞行俱乐部</strong>诞生于<span class="highlight">2024年7月12日</span>，虽然年轻，却充满了无限活力与激情。我们始终致力于为广大飞行爱好者打造一个交流与逐梦的理想家园。俱乐部拥有高配置的连飞服务器，这意味着无论你是追求极致真实感的 **X-Plane** 或 **微软模拟飞行** 玩家，还是希望利用碎片时间在手机端开启飞行之旅的爱好者，都能在这里找到志同道合的伙伴。</p>
             <p>在这里，没有距离的限制，也没有时间的束缚。只要你热爱飞行，打开设备，就能瞬间融入这个充满奇幻色彩的飞行天地。你可以和来自五湖四海的飞友们一起编队飞行，共同探索天空的奥秘，交流飞行技巧，分享飞行途中的奇妙风景，感受团队协作带来的独特乐趣。我们诚挚地邀请每一位怀揣飞行梦想的你，加入SYB模拟飞行俱乐部，开启属于你的云端冒险，让飞行不再只是想象，而是触手可及的美好体验。</p>
         </section>
